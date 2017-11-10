@@ -4,68 +4,9 @@
     box-sizing: border-box;
 }
 
-section{
+article{
     background-color: #D8D8D8;
     border: 1px solid #979797;
-}
-
-.contenedor{
-    max-width: 1024px;
-    margin: 0 auto;
-    overflow: hidden;
-    margin-top: 80px;
-    width: 100%;
-}
-
-.sec1{
-    float: left;
-    width: calc(50% - 10px);
-    height: 300px;
-    margin-right: 10px;
-}
-
-.sec2{
-    float: left;
-    width: calc(50% - 10px);
-    height: 300px;
-    margin-left: 10px;
-}
-
-.subcontenedor{
-    margin-top: 20px;
-    overflow: hidden;
-}
-
-.subcontenedor2{
-    margin-top: 20px;
-    height: 200px;
-    overflow: hidden;
-    position: relative;
-    background-color: #D8D8D8;
-    border: 1px solid #979797;
-    
-}
-
-.sec3{
-    float: left;
-    width: calc(100%/3 - 40px/3);
-    height: 120px;
-    margin-right: 10px;
-}
-
-.sec4{
-    float: left;
-    width: calc(100%/3 - 40px/3);
-    height: 120px;
-    margin-right: 10px;
-    margin-left: 10px;
-}
-
-.sec5{
-    float: left;
-    width: calc(100%/3 - 40px/3);
-    height: 120px;
-    margin-left: 10px;
 }
 
 .head{
@@ -75,9 +16,55 @@ section{
     position: fixed;
     left: 50%;
     transform: translateX(-50%);
-    top: 0%;
+    top: 0;
     background-color: #D8D8D8;
     border: 1px solid #979797;
+    text-align: center;
+    line-height: 80px;
+}
+
+.contenedor{
+    max-width: 1024px;
+    margin: 0 auto;
+    overflow: hidden;
+    margin-top: 100px;
+    width: 100%;
+}
+
+.sec1{
+    float: left;
+    width: calc(50% - 10px);
+    height: 300px;
+    margin-right: 20px;
+}
+
+.sec1:last-child{
+    margin-right: 0;
+}
+
+
+.subcontenedor{
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.subcontenedor2{
+    height: 200px;
+    position: relative;
+    background-color: #D8D8D8;
+    border: 1px solid #979797;
+    overflow: hidden;
+}
+
+.sec2{
+    float: left;
+    width: calc(100%/3 - 40px/3);
+    height: 120px;
+    margin-right: 20px;
+}
+
+.sec2:last-child{
+    margin-right: 0;
 }
 
 .sec6{
@@ -85,44 +72,21 @@ section{
     height: 150px;
     position: absolute;
     top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    left:50%;
+    margin-top: calc(-150px/2);
+    margin-left: calc(-150px/2);
 }
 
 @media (max-width:500px){
 
-    .sec1{
+    .sec1, .sec2{
         float: none;
         width: 100%;
-        margin-right: 0px;
-        
-    }
-    .sec2{
-        float: none;
-        width: 100%;
-        margin-left: 0px;
-        margin-top: 20px;
+        margin-bottom: 20px;
     }
 
-    .sec3{
-        float: none;
-        width: 100%;
-        margin-right: 0px;
-    }
-
-    .sec4{
-        float: none;
-        width: 100%;
-        margin-left: 0px;
-        margin-right: 0px;
-        margin-top: 20px;
-    }
-
-    .sec5{
-        float: none;
-        width: 100%;
-        margin-left: 0px;
-        margin-top: 20px;
+    .subcontenedor{
+        margin-bottom: 0;
     }
 
 }
